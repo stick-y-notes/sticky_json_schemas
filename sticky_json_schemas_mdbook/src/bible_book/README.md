@@ -4,6 +4,8 @@ This schema is for a book of the Bible.
 
 - [bible_book.schema.json](./bible_book.schema.json)
 
+This is used by the [SUNBIBLE](https://github.com/SunBible-dev) project.
+
 ## Book
 
 A schema for a book of the Bible.
