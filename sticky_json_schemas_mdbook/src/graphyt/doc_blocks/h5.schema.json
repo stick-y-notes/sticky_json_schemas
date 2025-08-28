@@ -1,0 +1,9 @@
+{
+  "$id": "https://stickyschema.near.near.page/graphyt/doc_blocks/h5.schema.json",
+  "type": "object",
+  "properties": {
+    "type": { "const": "h5" },
+    "text": { "type": "string" }
+  },
+  "required": ["type", "text"]
+}

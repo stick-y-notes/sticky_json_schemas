@@ -35,6 +35,66 @@ The `content` field is an array of blocks. It can contain:
 - **Text Blocks**: Headings (`h1`-`h6`) and paragraphs (`p`).
 - **Checkboxes**: Task items.
 
+### h1
+
+```json
+{{#include ./doc_blocks/h1.schema.json}}
+```
+
+### h2
+
+```json
+{{#include ./doc_blocks/h2.schema.json}}
+```
+
+### h3
+
+```json
+{{#include ./doc_blocks/h3.schema.json}}
+```
+
+### h4
+
+```json
+{{#include ./doc_blocks/h4.schema.json}}
+```
+
+### h5
+
+```json
+{{#include ./doc_blocks/h5.schema.json}}
+```
+
+### h6
+
+```json
+{{#include ./doc_blocks/h6.schema.json}}
+```
+
+### p
+
+```json
+{{#include ./doc_blocks/p.schema.json}}
+```
+
+### blockquote
+
+```json
+{{#include ./doc_blocks/blockquote.schema.json}}
+```
+
+### code
+
+```json
+{{#include ./doc_blocks/code.schema.json}}
+```
+
+### hr
+
+```json
+{{#include ./doc_blocks/hr.schema.json}}
+```
+
 ## Example
 
 ```json
