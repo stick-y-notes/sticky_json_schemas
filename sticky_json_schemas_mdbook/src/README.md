@@ -31,6 +31,7 @@ see [array/](./array/), for a sample basic schema
 - [json-schema.org](https://json-schema.org/)
 - [jsonrpc.org](https://www.jsonrpc.org/)
 - [swagger.io](https://swagger.io/)
+- [ajv.js.org](https://ajv.js.org/)
 
 ---
 
