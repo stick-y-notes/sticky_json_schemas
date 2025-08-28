@@ -19,6 +19,8 @@ sample note:
 { "color": "yellow", "note": "Hello World!", "id": "1" }
 ```
 
+- the id is not required but is helpful for editing apps, and aditional fuctionality
+
 ## Sticky Notes
 
 This schema validates an array of sticky notes.

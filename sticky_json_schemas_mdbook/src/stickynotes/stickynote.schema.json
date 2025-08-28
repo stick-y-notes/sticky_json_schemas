@@ -18,6 +18,6 @@
       "description": "The unique identifier for the sticky note."
     }
   },
-  "required": ["color", "note", "id"],
+  "required": ["color", "note"],
   "additionalItems": false
 }
