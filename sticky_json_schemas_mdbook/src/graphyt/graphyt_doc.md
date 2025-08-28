@@ -32,14 +32,17 @@ Each document contains:
 
 The `content` field is an array of blocks. It can contain:
 
+- [blockquote.schema.json](./doc_blocks/blockquote.schema.json)
+- [checkbox.schema.json](./doc_blocks/checkbox.schema.json)
+- [code.schema.json](./doc_blocks/code.schema.json)
 - [h1.schema.json](./doc_blocks/h1.schema.json)
 - [h2.schema.json](./doc_blocks/h2.schema.json)
 - [h3.schema.json](./doc_blocks/h3.schema.json)
 - [h4.schema.json](./doc_blocks/h4.schema.json)
 - [h5.schema.json](./doc_blocks/h5.schema.json)
 - [h6.schema.json](./doc_blocks/h6.schema.json)
+- [hr.schema.json](./doc_blocks/hr.schema.json)
 - [p.schema.json](./doc_blocks/p.schema.json)
-
 
 
 ### h1
