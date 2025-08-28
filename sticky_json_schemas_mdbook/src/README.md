@@ -30,6 +30,7 @@ see [array/](./array/), for a sample basic schema
 ### TOOLS
 - [json-schema.org](https://json-schema.org/)
 - [jsonrpc.org](https://www.jsonrpc.org/)
+- [swagger.io](https://swagger.io/)
 
 ---
 
