@@ -15,7 +15,7 @@ schema definition
   "$id": "https://stickyschema.near.near.page/example/example.schema.json",
   "title": "Example",
   "description": "An example schema",
-  "type": "object"
+  "..." : "..."
 }
 ```
 see [array/](./array/), for a sample basic schema
