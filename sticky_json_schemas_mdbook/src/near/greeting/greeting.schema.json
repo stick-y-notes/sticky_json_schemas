@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://stickyschema.near.near.page/near/greeting/greeting.schema.json",
   "title": "Greeting",
-  "description": "A schema for the greeting contract on NEAR.",
+  "description": "A schema for a greeting contract on NEAR.",
   "type": "object",
   "properties": {
     "greeting": {
