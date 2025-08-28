@@ -4,6 +4,7 @@ JSON schemas for different types of arrays.
 - [array.schema.json](./array.schema.json)
 - [array_of_numbers.schema.json](./array_of_numbers.schema.json)
 - [array_of_strings.schema.json](./array_of_strings.schema.json)
+- [array_of_arrays.schema.json](./array_of_arrays.schema.json)
 
 
 ## Generic Array
@@ -28,6 +29,14 @@ This schema validates that an array contains only number items.
 
 ```json
 {{#include array_of_numbers.schema.json}}
+```
+
+## Array of Arrays
+
+This schema validates that an array contains only arrays.
+
+```json
+{{#include array_of_arrays.schema.json}}
 ```
 
 
