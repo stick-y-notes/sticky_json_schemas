@@ -12,6 +12,16 @@ A schema for a simple greeting.
 {{#include greeting.schema.json}}
 ```
 
+### Sample
+
+A sample of a valid greeting.
+
+```json
+{
+  "greeting": "Hello, NEAR!"
+}
+```
+
 ---
 
 copyright: 2025 by sleet.near
