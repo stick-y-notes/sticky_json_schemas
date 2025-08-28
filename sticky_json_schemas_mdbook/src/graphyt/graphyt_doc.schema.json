@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Graphyt Document",
-  "description": "A schema for a Graphyt document, which can contain notes, color palettes, and other content blocks.",
+  "description": "A schema for a Graphyt document, which can contain text, checkboxs, color palettes, and other content blocks.",
   "type": "object",
   "properties": {
     "id": {
@@ -120,5 +120,5 @@
     }
   },
   "required": ["id", "title", "createdAt", "updatedAt", "content"],
-  "additionalProperties": false
+  "additionalProperties": true
 }
