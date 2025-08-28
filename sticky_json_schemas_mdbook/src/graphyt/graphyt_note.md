@@ -36,7 +36,7 @@ The `content` field is an array of blocks, each with a specific `type`.
 | `h1`–`h6`    | Headings for structure and hierarchy. Contains a `text` field.              |
 | `p`         | Paragraph text for descriptions or notes. Contains a `text` field.          |
 | `checkbox`  | Task item with a `label` and a `checked` state.                             |
-| `date`      | ISO-formatted date string (e.g. `"2025-09-10"`). Stored in a `value` field. |
+
 
 ## Example
 
@@ -50,10 +50,7 @@ The `content` field is an array of blocks, each with a specific `type`.
   "updatedAt": "2025-01-15T11:30:00.000Z",
   "pinned": false,
   "content": [
-    {
-      "type": "date",
-      "value": "2025-01-20"
-    },
+    
     { "type": "h2", "text": "Sprint Goals" },
     { "type": "p", "text": "Focus on user onboarding flow and core feature wireframes." },
     { "type": "h3", "text": "Deliverables" },
