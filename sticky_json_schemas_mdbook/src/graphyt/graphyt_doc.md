@@ -32,10 +32,6 @@ Each document contains:
 
 The `content` field is an array of blocks. It can contain:
 
-- **Text Blocks**: Headings (`h1`-`h6`) and paragraphs (`p`).
-- **Checkboxes**: Task items.
-
-**BLOCKS**
 - [h1.schema.json](./doc_blocks/h1.schema.json)
 - [h2.schema.json](./doc_blocks/h2.schema.json)
 - [h3.schema.json](./doc_blocks/h3.schema.json)
