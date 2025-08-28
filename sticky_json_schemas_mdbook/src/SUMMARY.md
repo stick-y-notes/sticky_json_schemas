@@ -20,6 +20,9 @@
 - [README.md](./near/README.md)
   - [greeting](./near/greeting/README.md)
 
+---
+
+# DOCS
 
 ---
 

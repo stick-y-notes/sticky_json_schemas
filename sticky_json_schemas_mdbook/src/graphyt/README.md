@@ -1,5 +1,7 @@
 # GRAPHYT
+schemas for the GRAPHYT ecosystem.
 
+- [graphyt_doc.md](./graphyt_doc.md)
 
 
 ---

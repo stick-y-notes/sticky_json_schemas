@@ -26,12 +26,25 @@ Each document contains:
 - **updatedAt**: ISO timestamp when document was last modified
 - **pinned**: Boolean indicating if document is pinned to top
 
+---
+
 ### Content Types
 
 The `content` field is an array of blocks. It can contain:
 
 - **Text Blocks**: Headings (`h1`-`h6`) and paragraphs (`p`).
 - **Checkboxes**: Task items.
+
+**BLOCKS**
+- [h1.schema.json](./doc_blocks/h1.schema.json)
+- [h2.schema.json](./doc_blocks/h2.schema.json)
+- [h3.schema.json](./doc_blocks/h3.schema.json)
+- [h4.schema.json](./doc_blocks/h4.schema.json)
+- [h5.schema.json](./doc_blocks/h5.schema.json)
+- [h6.schema.json](./doc_blocks/h6.schema.json)
+- [p.schema.json](./doc_blocks/p.schema.json)
+
+
 
 ### h1
 
@@ -92,6 +105,8 @@ The `content` field is an array of blocks. It can contain:
 ```json
 {{#include ./doc_blocks/hr.schema.json}}
 ```
+
+---
 
 ## Example
 
