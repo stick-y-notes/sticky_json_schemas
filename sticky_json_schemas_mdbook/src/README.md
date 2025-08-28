@@ -4,6 +4,8 @@
 stickyschema, is my playground project to learn more about json schemas and bring more structure to some of my apps.
 <br/>
 this is not meant to be taken as a dependable standard.
+<br/>
+this is not an exhaustive list.
 
 ## Creating your first schema
 ℹ️ [https://json-schema.org/learn/getting-started-step-by-step](https://json-schema.org/learn/getting-started-step-by-step)
@@ -20,11 +22,14 @@ schema definition
 ```
 see [array/](./array/), for a sample basic schema
 
-## Links
+### Links
 - [stickyschema.near - this mdbook](https://stickyschema.near.near.page/)
 - [stickyjson.near - website and interactive ui]
 - [sticky_json_schemas - github](https://github.com/stick-y-notes/sticky_json_schemas)
 
+### TOOLS
+- [json-schema.org](https://json-schema.org/)
+- [jsonrpc.org](https://www.jsonrpc.org/)
 
 ---
 

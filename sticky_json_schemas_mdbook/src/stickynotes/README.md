@@ -4,6 +4,7 @@ JSON schemas for different types of sticky notes.
 - [stickynote.schema.json](./stickynote.schema.json)
 - [stickynotes.schema.json](./stickynotes.schema.json)
 
+ℹ️ this is the schema that the simple  [stickynotes](https://stickynotes.near.page/) web app uses
 
 ## Sticky Note
 
