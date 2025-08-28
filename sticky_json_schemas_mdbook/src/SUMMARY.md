@@ -14,6 +14,7 @@
 # near + json
 
 - [README.md](./near/README.md)
+  - [greeting](./near/greeting/README.md)
 
 
 ---
