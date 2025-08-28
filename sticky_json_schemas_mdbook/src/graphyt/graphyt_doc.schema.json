@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://stickyschema.near.near.page/graphyt/graphyt_doc.schema.json",
   "title": "Graphyt Document",
   "description": "A schema for a Graphyt document, which can contain text, checkboxs, color palettes, and other content blocks.",
   "type": "object",
