@@ -1,6 +1,6 @@
 # Graphyt Document
 
-This document describes the JSON schema for a Graphyt document, which acts as a container for Graphyt notes, color palettes, and other content blocks.
+This document describes the JSON schema for a Graphyt document
 
 ## Schema
 
@@ -30,8 +30,6 @@ Each document contains:
 
 The `content` field is an array of blocks. It can contain:
 
-- **Graphyt Notes**: Full note objects, conforming to `graphyt_note.schema.json`.
-- **Graphyt Palettes**: Color palette objects, conforming to `graphyt_palette.schema.json`.
 - **Text Blocks**: Headings (`h1`-`h6`) and paragraphs (`p`).
 - **Checkboxes**: Task items.
 
@@ -135,26 +133,9 @@ The `content` field is an array of blocks. It can contain:
         "text": "console.log('Hello, World!');"
     },
     {
-      "id": "550e8400-e29b-41d4-a716-446655440002",
-      "title": "Action Items",
-      "color": "#E8F5E8",
-      "tags": ["actions", "team-a"],
-      "createdAt": "2025-08-28T10:05:00.000Z",
-      "updatedAt": "2025-08-28T10:05:00.000Z",
-      "pinned": false,
-      "content": [
-        { "type": "checkbox", "label": "Define project scope", "checked": false },
-        { "type": "checkbox", "label": "Assign team roles", "checked": false }
-      ]
-    },
-    {
-      "id": "c1b6a5f0-1b1f-4e3a-bf8a-2c2c5d7f1b1a",
-      "name": "Project Color Palette",
-      "colors": [
-        "#FFC107",
-        "#FF9800",
-        "#FF5722"
-      ]
+        "type": "checkbox",
+        "label": "Define project scope",
+        "checked": false
     }
   ]
 }
