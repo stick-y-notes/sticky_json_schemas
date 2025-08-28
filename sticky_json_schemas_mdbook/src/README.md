@@ -18,6 +18,7 @@ schema definition
   "type": "object"
 }
 ```
+see [array/](./array/), for a sample basic schema
 
 ## Links
 - [stickyschema.near - this mdbook](https://stickyschema.near.near.page/)
