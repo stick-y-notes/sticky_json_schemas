@@ -44,17 +44,17 @@
       "type": "array",
       "items": {
         "oneOf": [
-          { "$ref": "./doc_blocks/h1.schema.json" },
-          { "$ref": "./doc_blocks/h2.schema.json" },
-          { "$ref": "./doc_blocks/h3.schema.json" },
-          { "$ref": "./doc_blocks/h4.schema.json" },
-          { "$ref": "./doc_blocks/h5.schema.json" },
-          { "$ref": "./doc_blocks/h6.schema.json" },
-          { "$ref": "./doc_blocks/p.schema.json" },
-          { "$ref": "./doc_blocks/blockquote.schema.json" },
-          { "$ref": "./doc_blocks/code.schema.json" },
-          { "$ref": "./doc_blocks/hr.schema.json" },
-          { "$ref": "./doc_blocks/checkbox.schema.json" }
+          { "$ref": "./graphyt_blocks/h1.schema.json" },
+          { "$ref": "./graphyt_blocks/h2.schema.json" },
+          { "$ref": "./graphyt_blocks/h3.schema.json" },
+          { "$ref": "./graphyt_blocks/h4.schema.json" },
+          { "$ref": "./graphyt_blocks/h5.schema.json" },
+          { "$ref": "./graphyt_blocks/h6.schema.json" },
+          { "$ref": "./graphyt_blocks/p.schema.json" },
+          { "$ref": "./graphyt_blocks/blockquote.schema.json" },
+          { "$ref": "./graphyt_blocks/code.schema.json" },
+          { "$ref": "./graphyt_blocks/hr.schema.json" },
+          { "$ref": "./graphyt_blocks/checkbox.schema.json" }
         ]
       }
     }

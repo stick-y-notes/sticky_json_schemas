@@ -32,77 +32,77 @@ Each document can optionally contain:
 
 The `content` field is an array of blocks. It can contain:
 
-- [blockquote.schema.json](./doc_blocks/blockquote.schema.json)
-- [checkbox.schema.json](./doc_blocks/checkbox.schema.json)
-- [code.schema.json](./doc_blocks/code.schema.json)
-- [h1.schema.json](./doc_blocks/h1.schema.json)
-- [h2.schema.json](./doc_blocks/h2.schema.json)
-- [h3.schema.json](./doc_blocks/h3.schema.json)
-- [h4.schema.json](./doc_blocks/h4.schema.json)
-- [h5.schema.json](./doc_blocks/h5.schema.json)
-- [h6.schema.json](./doc_blocks/h6.schema.json)
-- [hr.schema.json](./doc_blocks/hr.schema.json)
-- [p.schema.json](./doc_blocks/p.schema.json)
+- [blockquote.schema.json](./graphyt_blocks/blockquote.schema.json)
+- [checkbox.schema.json](./graphyt_blocks/checkbox.schema.json)
+- [code.schema.json](./graphyt_blocks/code.schema.json)
+- [h1.schema.json](./graphyt_blocks/h1.schema.json)
+- [h2.schema.json](./graphyt_blocks/h2.schema.json)
+- [h3.schema.json](./graphyt_blocks/h3.schema.json)
+- [h4.schema.json](./graphyt_blocks/h4.schema.json)
+- [h5.schema.json](./graphyt_blocks/h5.schema.json)
+- [h6.schema.json](./graphyt_blocks/h6.schema.json)
+- [hr.schema.json](./graphyt_blocks/hr.schema.json)
+- [p.schema.json](./graphyt_blocks/p.schema.json)
 
 
 ### h1
 
 ```json
-{{#include ./doc_blocks/h1.schema.json}}
+{{#include ./graphyt_blocks/h1.schema.json}}
 ```
 
 ### h2
 
 ```json
-{{#include ./doc_blocks/h2.schema.json}}
+{{#include ./graphyt_blocks/h2.schema.json}}
 ```
 
 ### h3
 
 ```json
-{{#include ./doc_blocks/h3.schema.json}}
+{{#include ./graphyt_blocks/h3.schema.json}}
 ```
 
 ### h4
 
 ```json
-{{#include ./doc_blocks/h4.schema.json}}
+{{#include ./graphyt_blocks/h4.schema.json}}
 ```
 
 ### h5
 
 ```json
-{{#include ./doc_blocks/h5.schema.json}}
+{{#include ./graphyt_blocks/h5.schema.json}}
 ```
 
 ### h6
 
 ```json
-{{#include ./doc_blocks/h6.schema.json}}
+{{#include ./graphyt_blocks/h6.schema.json}}
 ```
 
 ### p
 
 ```json
-{{#include ./doc_blocks/p.schema.json}}
+{{#include ./graphyt_blocks/p.schema.json}}
 ```
 
 ### blockquote
 
 ```json
-{{#include ./doc_blocks/blockquote.schema.json}}
+{{#include ./graphyt_blocks/blockquote.schema.json}}
 ```
 
 ### code
 
 ```json
-{{#include ./doc_blocks/code.schema.json}}
+{{#include ./graphyt_blocks/code.schema.json}}
 ```
 
 ### hr
 
 ```json
-{{#include ./doc_blocks/hr.schema.json}}
+{{#include ./graphyt_blocks/hr.schema.json}}
 ```
 
 ---
