@@ -1,5 +1,5 @@
 # Array Schemas
-This section provides JSON schemas for different types of arrays.
+JSON schemas for different types of arrays.
 
 - [array.schema.json](./array.schema.json)
 - [array_of_numbers.schema.json](./array_of_numbers.schema.json)
