@@ -16,9 +16,9 @@ A Graphyt document is a JSON object with metadata and a flexible content structu
 
 ### Document-Level Metadata
 
-Each document contains:
+Each document can optionally contain:
 
-- **id**: Unique identifier (UUID)
+- **id**: Unique identifier (string)
 - **title**: User-defined document title
 - **color**: Background color for the document (hex format)
 - **tags**: Array of keywords or labels for categorization
@@ -111,13 +111,8 @@ The `content` field is an array of blocks. It can contain:
 
 ```json
 {
-  "id": "doc-123-abc",
+  "id": "my-document",
   "title": "Project Phoenix Kick-off",
-  "color": "#FFFFFF",
-  "tags": ["project-phoenix", "kick-off", "planning"],
-  "createdAt": "2025-08-28T10:00:00.000Z",
-  "updatedAt": "2025-08-28T10:00:00.000Z",
-  "pinned": true,
   "content": [
     {
       "type": "h1",
