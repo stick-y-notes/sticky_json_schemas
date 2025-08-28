@@ -9,6 +9,7 @@
 - [array](./array/README.md)
 - [stickynotes](./stickynotes/README.md)
 - [bible_book](./bible_book/README.md)
+- [graphyt](./graphyt/README.md)
 
 ---
 
