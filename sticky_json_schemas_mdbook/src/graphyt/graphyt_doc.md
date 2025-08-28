@@ -116,6 +116,25 @@ The `content` field is an array of blocks. It can contain:
       "text": "This document contains all the notes and resources for the kick-off meeting."
     },
     {
+      "type": "h2",
+      "text": "Agenda"
+    },
+    {
+      "type": "p",
+      "text": "The following topics will be discussed:"
+    },
+    {
+        "type": "blockquote",
+        "text": "The minutes of this meeting will be distributed to all attendees."
+    },
+    {
+        "type": "hr"
+    },
+    {
+        "type": "code",
+        "text": "console.log('Hello, World!');"
+    },
+    {
       "id": "550e8400-e29b-41d4-a716-446655440002",
       "title": "Action Items",
       "color": "#E8F5E8",

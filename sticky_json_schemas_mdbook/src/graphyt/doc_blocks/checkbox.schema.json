@@ -1,0 +1,10 @@
+{
+  "$id": "https://stickyschema.near.near.page/graphyt/doc_blocks/checkbox.schema.json",
+  "type": "object",
+  "properties": {
+    "type": { "const": "checkbox" },
+    "label": { "type": "string" },
+    "checked": { "type": "boolean" }
+  },
+  "required": ["type", "label", "checked"]
+}
