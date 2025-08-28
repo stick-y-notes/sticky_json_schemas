@@ -3,7 +3,8 @@
   "type": "object",
   "properties": {
     "type": { "const": "code" },
-    "text": { "type": "string" }
+    "text": { "type": "string" },
+    "language": { "type": "string" }
   },
   "required": ["type", "text"]
 }
