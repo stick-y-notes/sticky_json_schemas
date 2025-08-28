@@ -45,77 +45,10 @@
       "type": "array",
       "items": {
         "oneOf": [
-          {
-            "$ref": "graphyt_note.schema.json"
-          },
-          {
-            "$ref": "graphyt_palette.schema.json"
-          },
-          {
-            "type": "object",
-            "properties": {
-              "type": { "const": "h1" },
-              "text": { "type": "string" }
-            },
-            "required": ["type", "text"]
-          },
-          {
-            "type": "object",
-            "properties": {
-              "type": { "const": "h2" },
-              "text": { "type": "string" }
-            },
-            "required": ["type", "text"]
-          },
-          {
-            "type": "object",
-            "properties": {
-              "type": { "const": "h3" },
-              "text": { "type": "string" }
-            },
-            "required": ["type", "text"]
-          },
-          {
-            "type": "object",
-            "properties": {
-              "type": { "const": "h4" },
-              "text": { "type": "string" }
-            },
-            "required": ["type", "text"]
-          },
-          {
-            "type": "object",
-            "properties": {
-              "type": { "const": "h5" },
-              "text": { "type": "string" }
-            },
-            "required": ["type", "text"]
-          },
-          {
-            "type": "object",
-            "properties": {
-              "type": { "const": "h6" },
-              "text": { "type": "string" }
-            },
-            "required": ["type", "text"]
-          },
-          {
-            "type": "object",
-            "properties": {
-              "type": { "const": "p" },
-              "text": { "type": "string" }
-            },
-            "required": ["type", "text"]
-          },
-          {
-            "type": "object",
-            "properties": {
-              "type": { "const": "checkbox" },
-              "label": { "type": "string" },
-              "checked": { "type": "boolean" }
-            },
-            "required": ["type", "label", "checked"]
-          }
+          { "$ref": "./doc_blocks/h1.schema.json" },
+          { "$ref": "./doc_blocks/h2.schema.json" },
+          { "$ref": "./doc_blocks/p.schema.json" },
+          { "$ref": "./doc_blocks/checkbox.schema.json" }
         ]
       }
     }
