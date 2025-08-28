@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stickyschema.near.near.page/stickynotes/stickynote.schema.json",
+  "title": "Sticky Note",
+  "description": "A schema for a single sticky note.",
+  "type": "object",
+  "properties": {
+    "color": {
+      "type": "string",
+      "description": "The color of the sticky note."
+    },
+    "note": {
+      "type": "string",
+      "description": "The content of the sticky note."
+    },
+    "id": {
+      "type": "string",
+      "description": "The unique identifier for the sticky note."
+    }
+  },
+  "required": ["color", "note", "id"]
+}
