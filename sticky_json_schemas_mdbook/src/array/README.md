@@ -1,2 +1,27 @@
-# array
-a schema for a basic array
+# Array Schemas
+
+This section provides JSON schemas for different types of arrays.
+
+## Generic Array
+
+A schema for a basic array with unrestricted item types.
+
+```json
+{{#include array.schema.json}}
+```
+
+## Array of Strings
+
+This schema validates that an array contains only string items.
+
+```json
+{{#include array_of_strings.schema.json}}
+```
+
+## Array of Numbers
+
+This schema validates that an array contains only number items.
+
+```json
+{{#include array_of_numbers.schema.json}}
+```
