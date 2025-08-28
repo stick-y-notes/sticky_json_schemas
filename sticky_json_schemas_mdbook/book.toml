@@ -1,0 +1,5 @@
+[book]
+authors = ["Nathan Renfroe"]
+language = "en"
+src = "src"
+title = "sticky_json_schemas_mdbook"
