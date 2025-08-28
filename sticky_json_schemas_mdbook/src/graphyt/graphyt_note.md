@@ -31,10 +31,8 @@ The `content` field is an array of blocks, each with a specific `type`.
 |-------------|-----------------------------------------------------------------------------|
 | `h1`–`h6`    | Headings for structure and hierarchy. Contains a `text` field.              |
 | `p`         | Paragraph text for descriptions or notes. Contains a `text` field.          |
-| `palette`   | Defines a color scheme as an array of hex codes in a `colors` field.        |
 | `checkbox`  | Task item with a `label` and a `checked` state.                             |
 | `date`      | ISO-formatted date string (e.g. `"2025-09-10"`). Stored in a `value` field. |
-| `timezone`  | IANA timezone string (e.g. `"Europe/Berlin"`). Stored in a `value` field.   |
 
 ## Example
 
@@ -51,14 +49,6 @@ The `content` field is an array of blocks, each with a specific `type`.
     {
       "type": "date",
       "value": "2025-01-20"
-    },
-    {
-      "type": "timezone",
-      "value": "America/New_York"
-    },
-    {
-      "type": "palette",
-      "colors": ["#4CAF50", "#81C784", "#A5D6A7", "#C8E6C9"]
     },
     { "type": "h2", "text": "Sprint Goals" },
     { "type": "p", "text": "Focus on user onboarding flow and core feature wireframes." },

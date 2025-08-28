@@ -103,20 +103,6 @@
           {
             "type": "object",
             "properties": {
-              "type": { "const": "palette" },
-              "colors": {
-                "type": "array",
-                "items": {
-                  "type": "string",
-                  "pattern": "^#[0-9a-fA-F]{6}$"
-                }
-              }
-            },
-            "required": ["type", "colors"]
-          },
-          {
-            "type": "object",
-            "properties": {
               "type": { "const": "checkbox" },
               "label": { "type": "string" },
               "checked": { "type": "boolean" }
@@ -131,14 +117,6 @@
                 "type": "string",
                 "format": "date"
               }
-            },
-            "required": ["type", "value"]
-          },
-          {
-            "type": "object",
-            "properties": {
-              "type": { "const": "timezone" },
-              "value": { "type": "string" }
             },
             "required": ["type", "value"]
           }
