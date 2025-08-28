@@ -1,21 +1,124 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Graphyt Document",
-  "description": "A schema for a Graphyt document, which can contain notes and color palettes.",
+  "description": "A schema for a Graphyt document, which can contain notes, color palettes, and other content blocks.",
   "type": "object",
   "properties": {
-    "notes": {
+    "id": {
+      "description": "Unique identifier for the document.",
+      "type": "string",
+      "format": "uuid"
+    },
+    "title": {
+      "description": "The title of the document.",
+      "type": "string"
+    },
+    "color": {
+      "description": "Background color for the document in hex format.",
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}$"
+    },
+    "tags": {
+      "description": "An array of keywords or labels for categorization.",
       "type": "array",
       "items": {
-        "$ref": "graphyt_note.schema.json"
+        "type": "string"
       }
     },
-    "palettes": {
+    "createdAt": {
+      "description": "The ISO timestamp when the document was created.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "description": "The ISO timestamp when the document was last modified.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "pinned": {
+      "description": "A boolean indicating if the document is pinned to the top.",
+      "type": "boolean"
+    },
+    "content": {
+      "description": "The content of the document, composed of different block types.",
       "type": "array",
       "items": {
-        "$ref": "graphyt_palette.schema.json"
+        "oneOf": [
+          {
+            "$ref": "graphyt_note.schema.json"
+          },
+          {
+            "$ref": "graphyt_palette.schema.json"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": { "const": "h1" },
+              "text": { "type": "string" }
+            },
+            "required": ["type", "text"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": { "const": "h2" },
+              "text": { "type": "string" }
+            },
+            "required": ["type", "text"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": { "const": "h3" },
+              "text": { "type": "string" }
+            },
+            "required": ["type", "text"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": { "const": "h4" },
+              "text": { "type": "string" }
+            },
+            "required": ["type", "text"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": { "const": "h5" },
+              "text": { "type": "string" }
+            },
+            "required": ["type", "text"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": { "const": "h6" },
+              "text": { "type": "string" }
+            },
+            "required": ["type", "text"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": { "const": "p" },
+              "text": { "type": "string" }
+            },
+            "required": ["type", "text"]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": { "const": "checkbox" },
+              "label": { "type": "string" },
+              "checked": { "type": "boolean" }
+            },
+            "required": ["type", "label", "checked"]
+          }
+        ]
       }
     }
   },
+  "required": ["id", "title", "createdAt", "updatedAt", "content"],
   "additionalProperties": false
 }
