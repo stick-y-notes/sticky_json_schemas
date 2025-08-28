@@ -14,6 +14,11 @@ A schema for a single sticky note.
 {{#include stickynote.schema.json}}
 ```
 
+sample note:
+```json
+{ "color": "yellow", "note": "Hello World!", "id": "1" }
+```
+
 ## Sticky Notes
 
 This schema validates an array of sticky notes.
