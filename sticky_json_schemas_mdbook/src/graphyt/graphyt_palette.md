@@ -6,7 +6,9 @@ This document describes the JSON schema for a color palette in the Graphyt ecosy
 
 The schema for a Graphyt color palette is defined in `graphyt_palette.schema.json`.
 
-[View Schema](graphyt_palette.schema.json)
+```json
+{{#include graphyt_palette.schema.json}}
+```
 
 ## Palette Structure
 
