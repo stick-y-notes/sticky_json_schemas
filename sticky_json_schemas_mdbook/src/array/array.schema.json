@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stickyschema.near.near.page/array/array.schema.json",
+  "title": "array",
+  "description": "A basic schema for just an array",
+  "type": "object"
+}

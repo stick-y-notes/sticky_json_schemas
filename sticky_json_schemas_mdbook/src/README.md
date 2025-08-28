@@ -14,7 +14,7 @@ schema definition
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://stickyschema.near.near.page/example/example.schema.json",
   "title": "Example",
-  "description": "An example in the schema",
+  "description": "An example schema",
   "type": "object"
 }
 ```
