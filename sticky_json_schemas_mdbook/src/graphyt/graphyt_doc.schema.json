@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Graphyt Document",
+  "description": "A schema for a Graphyt document, which can contain notes and color palettes.",
+  "type": "object",
+  "properties": {
+    "notes": {
+      "type": "array",
+      "items": {
+        "$ref": "graphyt_note.schema.json"
+      }
+    },
+    "palettes": {
+      "type": "array",
+      "items": {
+        "$ref": "graphyt_palette.schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}
