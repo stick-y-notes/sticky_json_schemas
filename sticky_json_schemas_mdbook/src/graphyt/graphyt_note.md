@@ -7,6 +7,10 @@ This document describes the JSON schema for a single note in the Graphyt applica
 The schema for a Graphyt note is defined in
 [graphyt_note.schema.json](./graphyt_note.schema.json).
 
+```json
+{{#include graphyt_note.schema.json}}
+```
+
 ## Note Structure
 
 Each note in Graphyt is a standalone JSON object with rich content capabilities and comprehensive metadata tracking.
