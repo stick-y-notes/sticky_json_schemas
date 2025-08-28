@@ -10,7 +10,9 @@
 - [stickynotes](./stickynotes/README.md)
 - [bible_book](./bible_book/README.md)
 - [graphyt](./graphyt/README.md)
-
+  - [graphyt_note](./graphyt/graphyt_note.md)
+  
+  
 ---
 
 # near + json
