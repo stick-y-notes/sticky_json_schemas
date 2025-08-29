@@ -43,6 +43,10 @@ The `content` field is an array of blocks. It can contain:
 - [h6.schema.json](./graphyt_blocks/h6.schema.json)
 - [hr.schema.json](./graphyt_blocks/hr.schema.json)
 - [p.schema.json](./graphyt_blocks/p.schema.json)
+- [color_palette.schema.json](./graphyt_blocks/color_palette.schema.json)
+- [font.schema.json](./graphyt_blocks/font.schema.json)
+- [date.schema.json](./graphyt_blocks/date.schema.json)
+- [timezone.schema.json](./graphyt_blocks/timezone.schema.json)
 
 
 ### h1
@@ -105,6 +109,30 @@ The `content` field is an array of blocks. It can contain:
 {{#include ./graphyt_blocks/hr.schema.json}}
 ```
 
+### color_palette
+
+```json
+{{#include ./graphyt_blocks/color_palette.schema.json}}
+```
+
+### font
+
+```json
+{{#include ./graphyt_blocks/font.schema.json}}
+```
+
+### date
+
+```json
+{{#include ./graphyt_blocks/date.schema.json}}
+```
+
+### timezone
+
+```json
+{{#include ./graphyt_blocks/timezone.schema.json}}
+```
+
 ---
 
 ## Website Builder
@@ -151,6 +179,23 @@ For drag and drop website building, see the [Graphyt Website Schema](./graphyt_w
         "type": "checkbox",
         "label": "Define project scope",
         "checked": false
+    },
+    {
+        "type": "color_palette",
+        "colors": ["#FF0000", "#00FF00", "#0000FF"]
+    },
+    {
+        "type": "font",
+        "name": "Roboto",
+        "link": "https://fonts.googleapis.com/css2?family=Roboto"
+    },
+    {
+        "type": "date",
+        "value": "2025-08-28"
+    },
+    {
+        "type": "timezone",
+        "utcOffset": "+05:30"
     }
   ]
 }

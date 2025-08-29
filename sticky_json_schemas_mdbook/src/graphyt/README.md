@@ -20,6 +20,10 @@ doc blocks
 - [blockquote.schema.json](./graphyt_blocks/blockquote.schema.json)
 - [checkbox.schema.json](./graphyt_blocks/checkbox.schema.json)
 - [code.schema.json](./graphyt_blocks/code.schema.json)
+- [color_palette.schema.json](./graphyt_blocks/color_palette.schema.json)
+- [font.schema.json](./graphyt_blocks/font.schema.json)
+- [date.schema.json](./graphyt_blocks/date.schema.json)
+- [timezone.schema.json](./graphyt_blocks/timezone.schema.json)
 
 web blocks
 - [button.schema.json](./graphyt_blocks/button.schema.json)
