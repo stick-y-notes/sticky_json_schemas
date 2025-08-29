@@ -54,7 +54,11 @@
           { "$ref": "./graphyt_blocks/blockquote.schema.json" },
           { "$ref": "./graphyt_blocks/code.schema.json" },
           { "$ref": "./graphyt_blocks/hr.schema.json" },
-          { "$ref": "./graphyt_blocks/checkbox.schema.json" }
+          { "$ref": "./graphyt_blocks/checkbox.schema.json" },
+          { "$ref": "./graphyt_blocks/color_palette.schema.json" },
+          { "$ref": "./graphyt_blocks/font.schema.json" },
+          { "$ref": "./graphyt_blocks/date.schema.json" },
+          { "$ref": "./graphyt_blocks/timezone.schema.json" }
         ]
       }
     }
