@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://stickyschema.near.near.page/stickynotes/stickynotes.schema.json",
+  "$id": "https://stickyschema.near.page/stickynotes/stickynotes.schema.json",
   "title": "Sticky Notes",
   "description": "A schema for a collection of sticky notes.",
   "type": "array",

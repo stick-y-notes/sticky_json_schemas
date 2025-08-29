@@ -14,7 +14,7 @@ schema definition
 ```json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://stickyschema.near.near.page/example/example.schema.json",
+  "$id": "https://stickyschema.near.page/example/example.schema.json",
   "title": "Example",
   "description": "An example schema",
   "..." : "..."
@@ -23,7 +23,7 @@ schema definition
 see [array/](./array/), for a sample basic schema
 
 ### Links
-- [stickyschema.near - this mdbook](https://stickyschema.near.near.page/)
+- [stickyschema.near - this mdbook](https://stickyschema.near.page/)
 - [stickyjson.near - website and interactive ui]
 - [sticky_json_schemas - github](https://github.com/stick-y-notes/sticky_json_schemas)
 

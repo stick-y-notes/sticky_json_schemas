@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://stickyschema.near.near.page/graphyt/graphyt_website.schema.json",
+  "$id": "https://stickyschema.near.page/graphyt/graphyt_website.schema.json",
   "title": "Graphyt Website",
   "description": "A schema for a Graphyt website, which can contain various web components for a drag and drop website builder.",
   "type": "object",

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://stickyschema.near.near.page/stickynotes/stickynote.schema.json",
+  "$id": "https://stickyschema.near.page/stickynotes/stickynote.schema.json",
   "title": "Sticky Note",
   "description": "A schema for a single sticky note.",
   "type": "object",

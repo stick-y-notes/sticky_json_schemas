@@ -1,5 +1,5 @@
 {
-  "$id": "https://stickyschema.near.near.page/graphyt/graphyt_blocks/hr.schema.json",
+  "$id": "https://stickyschema.near.page/graphyt/graphyt_blocks/hr.schema.json",
   "type": "object",
   "properties": {
     "type": { "const": "hr" }

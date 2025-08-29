@@ -10,7 +10,7 @@ rm -r book
 # build
 mdbook build
 # web4
-web4-deploy src stickyschema.near --nearfs
+web4-deploy book stickyschema.near --nearfs
 ```
 
 ---

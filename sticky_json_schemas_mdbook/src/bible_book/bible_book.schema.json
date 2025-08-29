@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://stickyschema.near.near.page/bible/bible_book.schema.json",
+    "$id": "https://stickyschema.near.page/bible/bible_book.schema.json",
     "title": "Bible Book",
     "description": "A schema for a book of the Bible.",
     "type": "object",

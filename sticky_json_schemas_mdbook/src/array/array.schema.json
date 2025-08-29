@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://stickyschema.near.near.page/array/array.schema.json",
+  "$id": "https://stickyschema.near.page/array/array.schema.json",
   "title": "Generic Array",
   "description": "A schema that validates a raw array with unrestricted items",
   "type": "array",
