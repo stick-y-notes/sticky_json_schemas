@@ -33,6 +33,19 @@
       "description": "URL to a CSS file for custom styling.",
       "type": "string"
     },
+    "js": {
+      "description": "URL to a JavaScript file for custom functionality.",
+      "type": "string"
+    },
+    "favicon": {
+      "description": "URL to a favicon image.",
+      "type": "string"
+    },
+    "lang": {
+      "description": "The primary language of the website.",
+      "type": "string",
+      "default": "en"
+    },
     "content": {
       "description": "The content of the website, composed of different block types.",
       "type": "array",

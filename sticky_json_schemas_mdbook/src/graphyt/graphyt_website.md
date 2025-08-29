@@ -24,6 +24,9 @@ Each website can optionally contain:
 - **color**: Primary color for the website (hex format)
 - **tags**: Array of keywords or labels for categorization
 - **css**: URL to a CSS file for custom styling
+- **js**: URL to a JavaScript file for custom functionality
+- **favicon**: URL to a favicon image
+- **lang**: The primary language of the website (default: "en")
 
 ---
 
@@ -70,6 +73,9 @@ The `content` field is an array of blocks. In addition to the standard document 
   "title": "My Awesome Website",
   "description": "This is my awesome website built with Graphyt",
   "css": "https://example.com/custom.css",
+  "js": "https://example.com/custom.js",
+  "favicon": "https://example.com/favicon.ico",
+  "lang": "en",
   "content": [
     {
       "type": "h1",
