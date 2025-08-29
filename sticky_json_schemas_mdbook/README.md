@@ -5,6 +5,8 @@
 ```sh
 # serve
 mdbook serve --open
+# clean
+rm -r book
 # build
 mdbook build
 # web4
