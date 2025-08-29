@@ -3,6 +3,7 @@ schemas for the GRAPHYT ecosystem.
 
 MAIN
 - [graphyt_doc.md](./graphyt_doc.md)
+- [graphyt_website.schema.json](./graphyt_website.schema.json)
 
 
 general blocks
@@ -21,6 +22,10 @@ doc blocks
 - [code.schema.json](./graphyt_blocks/code.schema.json)
 
 web blocks
+- [button.schema.json](./graphyt_blocks/button.schema.json)
+- [image.schema.json](./graphyt_blocks/image.schema.json)
+- [nft_display.schema.json](./graphyt_blocks/nft_display.schema.json)
+- [ft_display.schema.json](./graphyt_blocks/ft_display.schema.json)
 
 
 ---

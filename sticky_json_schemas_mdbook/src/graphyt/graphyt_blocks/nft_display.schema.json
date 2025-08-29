@@ -1,0 +1,8 @@
+{
+  "$id": "https://stickyschema.near.near.page/graphyt/graphyt_blocks/nft_display.schema.json",
+  "type": "object",
+  "properties": {
+    "type": { "const": "nft_display" }
+  },
+  "required": ["type"]
+}

@@ -1,0 +1,11 @@
+{
+  "$id": "https://stickyschema.near.near.page/graphyt/graphyt_blocks/image.schema.json",
+  "type": "object",
+  "properties": {
+    "type": { "const": "image" },
+    "url": { "type": "string" },
+    "alt": { "type": "string" },
+    "caption": { "type": "string" }
+  },
+  "required": ["type", "url"]
+}

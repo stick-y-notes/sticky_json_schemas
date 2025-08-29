@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://stickyschema.near.near.page/graphyt/graphyt_website.schema.json",
+  "title": "Graphyt Website",
+  "description": "A schema for a Graphyt website, which can contain various web components for a drag and drop website builder.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique identifier for the website.",
+      "type": "string"
+    },
+    "title": {
+      "description": "The title of the website.",
+      "type": "string"
+    },
+    "color": {
+      "description": "Primary color for the website in hex format.",
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}$"
+    },
+    "tags": {
+      "description": "An array of keywords or labels for categorization.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "createdAt": {
+      "description": "The ISO timestamp when the website was created.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "description": "The ISO timestamp when the website was last modified.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "content": {
+      "description": "The content of the website, composed of different block types.",
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "$ref": "./graphyt_blocks/h1.schema.json" },
+          { "$ref": "./graphyt_blocks/h2.schema.json" },
+          { "$ref": "./graphyt_blocks/h3.schema.json" },
+          { "$ref": "./graphyt_blocks/h4.schema.json" },
+          { "$ref": "./graphyt_blocks/h5.schema.json" },
+          { "$ref": "./graphyt_blocks/h6.schema.json" },
+          { "$ref": "./graphyt_blocks/p.schema.json" },
+          { "$ref": "./graphyt_blocks/blockquote.schema.json" },
+          { "$ref": "./graphyt_blocks/code.schema.json" },
+          { "$ref": "./graphyt_blocks/hr.schema.json" },
+          { "$ref": "./graphyt_blocks/checkbox.schema.json" },
+          { "$ref": "./graphyt_blocks/button.schema.json" },
+          { "$ref": "./graphyt_blocks/image.schema.json" },
+          { "$ref": "./graphyt_blocks/nft_display.schema.json" },
+          { "$ref": "./graphyt_blocks/ft_display.schema.json" }
+        ]
+      }
+    }
+  },
+  "required": ["content"],
+  "additionalProperties": true
+}
