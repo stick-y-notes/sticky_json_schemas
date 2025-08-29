@@ -107,6 +107,12 @@ The `content` field is an array of blocks. It can contain:
 
 ---
 
+## Website Builder
+
+For drag and drop website building, see the [Graphyt Website Schema](./graphyt_website.md).
+
+---
+
 ## Example
 
 ```json

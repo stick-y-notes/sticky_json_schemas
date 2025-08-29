@@ -13,6 +13,10 @@
       "description": "The title of the website.",
       "type": "string"
     },
+    "description": {
+      "description": "The meta description of the website.",
+      "type": "string"
+    },
     "color": {
       "description": "Primary color for the website in hex format.",
       "type": "string",
@@ -25,15 +29,9 @@
         "type": "string"
       }
     },
-    "createdAt": {
-      "description": "The ISO timestamp when the website was created.",
-      "type": "string",
-      "format": "date-time"
-    },
-    "updatedAt": {
-      "description": "The ISO timestamp when the website was last modified.",
-      "type": "string",
-      "format": "date-time"
+    "css": {
+      "description": "URL to a CSS file for custom styling.",
+      "type": "string"
     },
     "content": {
       "description": "The content of the website, composed of different block types.",

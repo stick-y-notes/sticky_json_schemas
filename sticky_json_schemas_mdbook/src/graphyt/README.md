@@ -3,7 +3,7 @@ schemas for the GRAPHYT ecosystem.
 
 MAIN
 - [graphyt_doc.md](./graphyt_doc.md)
-- [graphyt_website.schema.json](./graphyt_website.schema.json)
+- [graphyt_website.md](./graphyt_website.md)
 
 
 general blocks

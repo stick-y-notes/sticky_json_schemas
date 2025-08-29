@@ -20,10 +20,10 @@ Each website can optionally contain:
 
 - **id**: Unique identifier (string)
 - **title**: User-defined website title
+- **description**: Meta description for SEO
 - **color**: Primary color for the website (hex format)
 - **tags**: Array of keywords or labels for categorization
-- **createdAt**: ISO timestamp when website was created
-- **updatedAt**: ISO timestamp when website was last modified
+- **css**: URL to a CSS file for custom styling
 
 ---
 
@@ -68,6 +68,8 @@ The `content` field is an array of blocks. In addition to the standard document 
 {
   "id": "my-website",
   "title": "My Awesome Website",
+  "description": "This is my awesome website built with Graphyt",
+  "css": "https://example.com/custom.css",
   "content": [
     {
       "type": "h1",
