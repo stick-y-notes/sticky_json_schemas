@@ -33,6 +33,8 @@ see [array/](./array/), for a sample basic schema
 - [swagger.io](https://swagger.io/)
 - [ajv.js.org](https://ajv.js.org/)
 - [json-schema-editor.onrender.com/](https://json-schema-editor.onrender.com/)
+- [github.com/APIDevTools/json-schema-ref-parser](https://github.com/APIDevTools/json-schema-ref-parser)
+- 
 
 
 ---
