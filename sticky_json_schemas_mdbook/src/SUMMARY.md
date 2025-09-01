@@ -20,6 +20,7 @@
 
 - [README.md](./near/README.md)
   - [greeting](./near/greeting/README.md)
+  - [abi](./near/abi/README.md)
 
 ---
 

@@ -1,0 +1,259 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "NEAR Contract ABI",
+  "description": "A JSON schema for a NEAR contract's Application Binary Interface (ABI).",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "metadata",
+    "body"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Semver of the ABI schema format."
+    },
+    "metadata": {
+      "$ref": "#/definitions/AbiMetadata"
+    },
+    "body": {
+      "$ref": "#/definitions/AbiBody"
+    }
+  },
+  "definitions": {
+    "AbiMetadata": {
+      "type": "object",
+      "description": "Metadata information about the contract.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the smart contract."
+        },
+        "version": {
+          "type": "string",
+          "description": "The version of the smart contract."
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "The authors of the smart contract."
+        },
+        "build": {
+          "$ref": "#/definitions/BuildInfo"
+        },
+        "wasm_hash": {
+          "type": "string",
+          "description": "The SHA-256 hash of the contract WASM code in Base58 format."
+        }
+      }
+    },
+    "BuildInfo": {
+      "type": "object",
+      "description": "The information about how this contract was built.",
+      "required": [
+        "compiler",
+        "builder"
+      ],
+      "properties": {
+        "compiler": {
+          "type": "string",
+          "description": "The compiler (versioned) that was used to build the contract."
+        },
+        "builder": {
+          "type": "string",
+          "description": "The build tool (versioned) that was used to build the contract."
+        },
+        "image": {
+          "type": "string",
+          "description": "The docker image (versioned) where the contract was built."
+        }
+      }
+    },
+    "AbiBody": {
+      "type": "object",
+      "description": "Core ABI information.",
+      "required": [
+        "functions",
+        "root_schema"
+      ],
+      "properties": {
+        "functions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AbiFunction"
+          },
+          "description": "ABIs of all contract's functions."
+        },
+        "root_schema": {
+          "type": "object",
+          "description": "Root JSON schema for the ABI."
+        }
+      }
+    },
+    "AbiFunction": {
+      "type": "object",
+      "description": "ABI of a single function.",
+      "required": [
+        "name",
+        "kind"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "doc": {
+          "type": "string",
+          "description": "Human-readable documentation parsed from the source file."
+        },
+        "kind": {
+          "$ref": "#/definitions/AbiFunctionKind"
+        },
+        "modifiers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AbiFunctionModifier"
+          },
+          "description": "List of modifiers affecting the function."
+        },
+        "params": {
+          "$ref": "#/definitions/AbiParameters"
+        },
+        "callbacks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AbiType"
+          },
+          "description": "Type identifiers of the callbacks of the function."
+        },
+        "callbacks_vec": {
+          "$ref": "#/definitions/AbiType",
+          "description": "Type identifier of the vararg callbacks of the function."
+        },
+        "result": {
+          "$ref": "#/definitions/AbiType"
+        }
+      }
+    },
+    "AbiFunctionKind": {
+      "type": "string",
+      "description": "Function kind that regulates whether the function has to be invoked from a transaction.",
+      "enum": [
+        "view",
+        "call"
+      ]
+    },
+    "AbiFunctionModifier": {
+      "type": "string",
+      "description": "Function can have multiple modifiers that can change its semantics.",
+      "enum": [
+        "init",
+        "private",
+        "payable"
+      ]
+    },
+    "AbiSerializationType": {
+      "type": "string",
+      "description": "Supported serialization formats.",
+      "enum": [
+        "json",
+        "borsh"
+      ]
+    },
+    "AbiParameters": {
+      "description": "A list of function parameters sharing the same serialization type.",
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "args",
+            "serialization_type"
+          ],
+          "properties": {
+            "args": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/AbiJsonParameter"
+              }
+            },
+            "serialization_type": {
+              "enum": ["json"]
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "args",
+            "serialization_type"
+          ],
+          "properties": {
+            "args": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/AbiBorshParameter"
+              }
+            },
+            "serialization_type": {
+              "enum": ["borsh"]
+            }
+          }
+        }
+      ]
+    },
+    "AbiJsonParameter": {
+      "type": "object",
+      "description": "Information about a single named JSON function parameter.",
+      "required": [
+        "name",
+        "type_schema"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Parameter name (e.g. `p1` in `fn foo(p1: u32) {}`)."
+        },
+        "type_schema": {
+          "type": "object",
+          "description": "JSON Subschema that represents this type."
+        }
+      }
+    },
+    "AbiBorshParameter": {
+      "type": "object",
+      "description": "Information about a single named Borsh function parameter.",
+      "required": [
+        "name",
+        "type_schema"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Parameter name (e.g. `p1` in `fn foo(p1: u32) {}`)."
+        },
+        "type_schema": {
+          "type": "object",
+          "description": "Inline Borsh schema that represents this type."
+        }
+      }
+    },
+    "AbiType": {
+      "type": "object",
+      "description": "Information about a single type (e.g. function return type).",
+      "required": [
+        "serialization_type",
+        "type_schema"
+      ],
+      "properties": {
+        "serialization_type": {
+          "$ref": "#/definitions/AbiSerializationType"
+        },
+        "type_schema": {
+          "type": "object",
+          "description": "Schema describing the type (the actual schema format depends on `serialization_type`)."
+        }
+      }
+    }
+  }
+}
