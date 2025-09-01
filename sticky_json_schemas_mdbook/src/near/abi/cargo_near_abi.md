@@ -1,6 +1,6 @@
 # json_schema.rs
 
-🔗 https://github.com/near/cargo-near/blob/main/integration-tests/tests/abi/json_schema.rs
+🔗 [https://github.com/near/cargo-near/blob/main/integration-tests/tests/abi/json_schema.rs](https://github.com/near/cargo-near/blob/main/integration-tests/tests/abi/json_schema.rs)
 
 
 ```rs

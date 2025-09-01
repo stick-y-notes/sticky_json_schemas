@@ -6,6 +6,10 @@ This directory contains JSON schemas and documentation related to NEAR contract 
 
 - [NEAR Contract ABI Schema](./near_contract_abi.schema.json): A JSON schema for validating NEAR contract ABIs.
 
+```json
+{{#include near_contract_abi.schema.json}}
+```
+
 ## Documentation
 
 - [cargo-near ABI](./cargo_near_abi.md): Information about generating ABIs using `cargo-near`.
@@ -15,3 +19,8 @@ This directory contains JSON schemas and documentation related to NEAR contract 
 
 - [meme.cooking.contract_abi.json](./meme.cooking.contract_abi.json)
 - [rugfactory_factory_abi.json](./rugfactory_factory_abi.json)
+
+
+---
+
+copyright: 2025 by sleet.near

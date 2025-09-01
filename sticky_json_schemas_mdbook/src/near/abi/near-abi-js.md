@@ -1,6 +1,6 @@
 # near-abi-js
 
-🔗 https://github.com/near/near-abi-js
+🔗 [https://github.com/near/near-abi-js](https://github.com/near/near-abi-js)
 
 ```ts
 import { JSONSchema7 } from 'json-schema';
