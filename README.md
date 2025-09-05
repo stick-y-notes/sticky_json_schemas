@@ -5,9 +5,11 @@
 <br/>
 ℹ️ the main schema documentaion lives in the mdbook folder
 
+---
+
 sticky_json_schemas_mdbook
 <br/>
-🔗 stickyschema.near.page
+🔗 [stickyschema.near.page](stickyschema.near.page)
 ```sh
 mdbook init sticky_json_schemas_mdbook
 # sticky_json_schemas_mdbook
@@ -15,7 +17,7 @@ mdbook init sticky_json_schemas_mdbook
 
 sticky_json_schemas_preact
 <br/>
-🔗 stickyjson.near.page
+🔗 [stickyjson.near.page](stickyjson.near.page)
 ```sh
 bun create rsbuild@latest
 # sticky_json_schemas_preact
