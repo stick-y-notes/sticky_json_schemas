@@ -44,6 +44,7 @@
       "type": "array",
       "items": {
         "oneOf": [
+          { "$ref": "./graphyt_blocks/any.schema.json" },
           { "$ref": "./graphyt_blocks/h1.schema.json" },
           { "$ref": "./graphyt_blocks/h2.schema.json" },
           { "$ref": "./graphyt_blocks/h3.schema.json" },
