@@ -1,6 +1,8 @@
 # GRAPHYT
 schemas for the GRAPHYT ecosystem.
 
+> these are depracted 
+
 MAIN
 - [graphyt_doc.md](./graphyt_doc.md)
 - [graphyt_website.md](./graphyt_website.md)
