@@ -1,0 +1,18 @@
+{
+  "$id": "https://stickyschema.near.page/graphyt/v2/button.schema.json",
+  "title": "Graphyt Button",
+  "type": "object",
+  "properties": {
+    "button": {
+      "type": "object",
+      "properties": {
+        "label": { "type": "string" },
+        "link": { "type": "string" }
+      },
+      "required": ["label", "link"],
+      "additionalProperties": true
+    }
+  },
+  "required": ["button"],
+  "additionalProperties": false
+}
