@@ -1,0 +1,29 @@
+{
+  "$id": "https://stickyschema.near.page/graphyt/v2/stickynote.schema.json",
+  "title": "Sticky Note",
+  "description": "A schema for a single sticky note.",
+  "type": "object",
+  "properties": {
+    "stickynote": {
+      "type": "object",
+      "properties": {
+        "color": {
+          "type": "string",
+          "description": "The color of the sticky note."
+        },
+        "note": {
+          "type": "string",
+          "description": "The content of the sticky note."
+        },
+        "id": {
+          "type": "string",
+          "description": "The unique identifier for the sticky note."
+        }
+      },
+      "required": ["color", "note"],
+      "additionalProperties": true
+    }
+  },
+  "required": ["stickynote"],
+  "additionalProperties": false
+}
