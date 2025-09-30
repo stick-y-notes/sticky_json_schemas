@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://stickyschema.near.page/graphyt/graphyt_website.schema.json",
+  "title": "Graphyt Website",
+  "description": "A schema for a Graphyt website, which can contain various web components for a drag and drop website builder.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique identifier for the website.",
+      "type": "string"
+    },
+    "title": {
+      "description": "The title of the website.",
+      "type": "string"
+    },
+    "description": {
+      "description": "The meta description of the website.",
+      "type": "string"
+    },
+    "color": {
+      "description": "Primary color for the website in hex format.",
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}$"
+    },
+    "tags": {
+      "description": "An array of keywords or labels for categorization.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "css": {
+      "description": "URL to a CSS file for custom styling.",
+      "type": "string"
+    },
+    "js": {
+      "description": "URL to a JavaScript file for custom functionality.",
+      "type": "string"
+    },
+    "favicon": {
+      "description": "URL to a favicon image.",
+      "type": "string"
+    },
+    "lang": {
+      "description": "The primary language of the website.",
+      "type": "string",
+      "default": "en"
+    },
+    "content": {
+      "description": "The content of the website, composed of different block types.",
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "$ref": "./v1/h1.schema.json" },
+          { "$ref": "./v1/h2.schema.json" },
+          { "$ref": "./v1/h3.schema.json" },
+          { "$ref": "./v1/h4.schema.json" },
+          { "$ref": "./v1/h5.schema.json" },
+          { "$ref": "./v1/h6.schema.json" },
+          { "$ref": "./v1/p.schema.json" },
+          { "$ref": "./v1/blockquote.schema.json" },
+          { "$ref": "./v1/code.schema.json" },
+          { "$ref": "./v1/hr.schema.json" },
+          { "$ref": "./v1/checkbox.schema.json" },
+          { "$ref": "./v1/button.schema.json" },
+          { "$ref": "./v1/image.schema.json" },
+          { "$ref": "./v1/nft_display.schema.json" },
+          { "$ref": "./v1/ft_display.schema.json" }
+        ]
+      }
+    }
+  },
+  "required": ["content"],
+  "additionalProperties": true
+}

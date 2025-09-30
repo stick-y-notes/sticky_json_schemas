@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://stickyschema.near.page/graphyt/graphyt_doc.schema.json",
+  "title": "Graphyt Document",
+  "description": "A schema for a Graphyt document, which can contain text, checkboxs, color palettes, and other content blocks.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique identifier for the document.",
+      "type": "string"
+    },
+    "title": {
+      "description": "The title of the document.",
+      "type": "string"
+    },
+    "color": {
+      "description": "Background color for the document in hex format.",
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}$"
+    },
+    "tags": {
+      "description": "An array of keywords or labels for categorization.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "createdAt": {
+      "description": "The ISO timestamp when the document was created.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "description": "The ISO timestamp when the document was last modified.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "pinned": {
+      "description": "A boolean indicating if the document is pinned to the top.",
+      "type": "boolean"
+    },
+    "content": {
+      "description": "The content of the document, composed of different block types.",
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "$ref": "./graphyt_blocks/any.schema.json" },
+          { "$ref": "./graphyt_blocks/h1.schema.json" },
+          { "$ref": "./graphyt_blocks/h2.schema.json" },
+          { "$ref": "./graphyt_blocks/h3.schema.json" },
+          { "$ref": "./graphyt_blocks/h4.schema.json" },
+          { "$ref": "./graphyt_blocks/h5.schema.json" },
+          { "$ref": "./graphyt_blocks/h6.schema.json" },
+          { "$ref": "./graphyt_blocks/p.schema.json" },
+          { "$ref": "./graphyt_blocks/blockquote.schema.json" },
+          { "$ref": "./graphyt_blocks/code.schema.json" },
+          { "$ref": "./graphyt_blocks/hr.schema.json" },
+          { "$ref": "./graphyt_blocks/checkbox.schema.json" },
+          { "$ref": "./graphyt_blocks/color_palette.schema.json" },
+          { "$ref": "./graphyt_blocks/font.schema.json" },
+          { "$ref": "./graphyt_blocks/date.schema.json" },
+          { "$ref": "./graphyt_blocks/timezone.schema.json" }
+        ]
+      }
+    }
+  },
+  "required": ["content"],
+  "additionalProperties": true
+}
