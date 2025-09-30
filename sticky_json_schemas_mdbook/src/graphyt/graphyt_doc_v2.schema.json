@@ -44,22 +44,22 @@
       "type": "array",
       "items": {
         "oneOf": [
-          { "$ref": "./graphyt_blocks/any.schema.json" },
-          { "$ref": "./graphyt_blocks/h1.schema.json" },
-          { "$ref": "./graphyt_blocks/h2.schema.json" },
-          { "$ref": "./graphyt_blocks/h3.schema.json" },
-          { "$ref": "./graphyt_blocks/h4.schema.json" },
-          { "$ref": "./graphyt_blocks/h5.schema.json" },
-          { "$ref": "./graphyt_blocks/h6.schema.json" },
-          { "$ref": "./graphyt_blocks/p.schema.json" },
-          { "$ref": "./graphyt_blocks/blockquote.schema.json" },
-          { "$ref": "./graphyt_blocks/code.schema.json" },
-          { "$ref": "./graphyt_blocks/hr.schema.json" },
-          { "$ref": "./graphyt_blocks/checkbox.schema.json" },
-          { "$ref": "./graphyt_blocks/color_palette.schema.json" },
-          { "$ref": "./graphyt_blocks/font.schema.json" },
-          { "$ref": "./graphyt_blocks/date.schema.json" },
-          { "$ref": "./graphyt_blocks/timezone.schema.json" }
+          { "$ref": "./v2/any.schema.json" },
+          { "$ref": "./v2/h1.schema.json" },
+          { "$ref": "./v2/h2.schema.json" },
+          { "$ref": "./v2/h3.schema.json" },
+          { "$ref": "./v2/h4.schema.json" },
+          { "$ref": "./v2/h5.schema.json" },
+          { "$ref": "./v2/h6.schema.json" },
+          { "$ref": "./v2/p.schema.json" },
+          { "$ref": "./v2/blockquote.schema.json" },
+          { "$ref": "./v2/code.schema.json" },
+          { "$ref": "./v2/hr.schema.json" },
+          { "$ref": "./v2/checkbox.schema.json" },
+          { "$ref": "./v2/color_palette.schema.json" },
+          { "$ref": "./v2/font.schema.json" },
+          { "$ref": "./v2/date.schema.json" },
+          { "$ref": "./v2/timezone.schema.json" }
         ]
       }
     }
