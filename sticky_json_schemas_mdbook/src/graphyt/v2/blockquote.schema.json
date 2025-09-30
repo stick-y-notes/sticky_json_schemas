@@ -1,0 +1,9 @@
+{
+  "$id": "https://stickyschema.near.page/graphyt/v1/blockquote.schema.json",
+  "type": "object",
+  "properties": {
+    "type": { "const": "blockquote" },
+    "text": { "type": "string" }
+  },
+  "required": ["type", "text"]
+}
