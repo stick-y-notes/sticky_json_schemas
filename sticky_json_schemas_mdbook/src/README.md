@@ -34,7 +34,9 @@ see [array/](./array/), for a sample basic schema
 - [ajv.js.org](https://ajv.js.org/)
 - [json-schema-editor.onrender.com/](https://json-schema-editor.onrender.com/)
 - [github.com/APIDevTools/json-schema-ref-parser](https://github.com/APIDevTools/json-schema-ref-parser)
-- 
+
+**OTHER COOL STUFF**
+- [https://jsoncanvas.org/](https://jsoncanvas.org/) - An open file format for infinite canvas data.
 
 
 ---
