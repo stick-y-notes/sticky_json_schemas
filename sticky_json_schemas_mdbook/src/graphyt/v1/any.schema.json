@@ -1,5 +1,5 @@
 {
-  "$id": "https://stickyschema.near.page/graphyt/graphyt_blocks/any.schema.json",
+  "$id": "https://stickyschema.near.page/graphyt/v1/any.schema.json",
   "type": "object",
   "properties": {
     "type": { "type": "string" }

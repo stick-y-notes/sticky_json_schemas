@@ -1,5 +1,5 @@
 {
-  "$id": "https://stickyschema.near.page/graphyt/graphyt_blocks/checkbox.schema.json",
+  "$id": "https://stickyschema.near.page/graphyt/v1/checkbox.schema.json",
   "type": "object",
   "properties": {
     "type": { "const": "checkbox" },

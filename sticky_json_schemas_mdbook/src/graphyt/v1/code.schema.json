@@ -1,5 +1,5 @@
 {
-  "$id": "https://stickyschema.near.page/graphyt/graphyt_blocks/code.schema.json",
+  "$id": "https://stickyschema.near.page/graphyt/v1/code.schema.json",
   "type": "object",
   "properties": {
     "type": { "const": "code" },

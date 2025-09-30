@@ -1,5 +1,5 @@
 {
-  "$id": "https://stickyschema.near.page/graphyt/graphyt_blocks/h3.schema.json",
+  "$id": "https://stickyschema.near.page/graphyt/v1/h3.schema.json",
   "type": "object",
   "properties": {
     "type": { "const": "h3" },

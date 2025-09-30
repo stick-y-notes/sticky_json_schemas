@@ -1,5 +1,5 @@
 {
-  "$id": "https://stickyschema.near.page/graphyt/graphyt_blocks/h5.schema.json",
+  "$id": "https://stickyschema.near.page/graphyt/v1/h5.schema.json",
   "type": "object",
   "properties": {
     "type": { "const": "h5" },
