@@ -1,0 +1,9 @@
+{
+  "$id": "https://stickyschema.near.page/graphyt/v2/h6.schema.json",
+  "type": "object",
+  "properties": {
+    "h6": { "type": "string" }
+  },
+  "required": ["h6"],
+  "additionalProperties": false
+}

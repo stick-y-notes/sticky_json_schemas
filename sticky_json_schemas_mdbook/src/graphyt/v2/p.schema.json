@@ -1,0 +1,9 @@
+{
+  "$id": "https://stickyschema.near.page/graphyt/v2/p.schema.json",
+  "type": "object",
+  "properties": {
+    "p": { "type": "string" }
+  },
+  "required": ["p"],
+  "additionalProperties": false
+}

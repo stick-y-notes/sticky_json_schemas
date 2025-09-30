@@ -1,0 +1,18 @@
+
+{
+  "$id": "https://stickyschema.near.page/graphyt/v2/checkbox.schema.json",
+  "type": "object",
+  "properties": {
+    "checkbox": {
+      "type": "object",
+      "properties": {
+        "label": { "type": "string" },
+        "checked": { "type": "boolean" }
+      },
+      "required": ["label", "checked"],
+      "additionalProperties": true
+    }
+  },
+  "required": ["checkbox"],
+  "additionalProperties": false
+}

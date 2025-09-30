@@ -1,0 +1,9 @@
+{
+  "$id": "https://stickyschema.near.page/graphyt/v2/h3.schema.json",
+  "type": "object",
+  "properties": {
+    "h3": { "type": "string" }
+  },
+  "required": ["h3"],
+  "additionalProperties": false
+}
