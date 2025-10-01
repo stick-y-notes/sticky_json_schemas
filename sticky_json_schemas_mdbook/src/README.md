@@ -37,6 +37,7 @@ see [array/](./array/), for a sample basic schema
 
 **OTHER COOL STUFF**
 - [https://jsoncanvas.org/](https://jsoncanvas.org/) - An open file format for infinite canvas data.
+- [https://prosemirror.net/](https://prosemirror.net/) - A toolkit for building rich-text editors on the web, also has Extensible schemas
 
 
 ---
